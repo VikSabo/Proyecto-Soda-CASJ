@@ -1,3 +1,7 @@
+/*=========================
+  
+ ================= */
+
 code {
   background: #2db34a;
   border-radius: 6px;
@@ -39,7 +43,9 @@ footer {
   margin-bottom: 0;
 }
 
-/*Header*/
+/*=========================
+  Header
+ ================= */
 #wrapper {
   padding-bottom: 50px;
 }
@@ -58,10 +64,12 @@ footer {
   padding: 0px 0px;
 }
 
-/*Menu*/
+/*=========================
+  Menu
+ ================= */
 #menu {
   float: right;
-  width: 500px;
+  width: 800px;
   height: 90px;
   margin: 0 auto;
   padding: 0;
@@ -122,7 +130,9 @@ footer {
   background: #B50D0D;
 }
 
-/* footer social icons */
+/*=========================
+  Footer Social Icons
+ ================= */
 ul.social-network {
   list-style: none;
   display: inline;
@@ -153,11 +163,11 @@ ul.social-network li {
 
 @font-face {
     font-family: 'si';
-    src: url('icons/socicon.eot');
-    src: url('icons/socicon.eot?#iefix') format('embedded-opentype'),
-         url('icons/socicon.woff') format('woff'),
-         url('icons/socicon.ttf') format('truetype'),
-         url('icons/socicon.svg#icomoonregular') format('svg');
+    src: url('../icons/socicon.eot');
+    src: url('../icons/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../icons/socicon.woff') format('woff'),
+         url('../icons/socicon.ttf') format('truetype'),
+         url('../icons/socicon.svg#icomoonregular') format('svg');
     font-weight: normal;
     font-style: normal;
  
@@ -166,7 +176,7 @@ ul.social-network li {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family:si;
-        src: url(icons/socicon.svg) format(svg);
+        src: url(../icons/socicon.svg) format(svg);
     }
 }
 
