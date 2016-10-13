@@ -18,8 +18,8 @@
             <li class="current_page_item"><a href="#">Home</a></li>
             <li><a href="menu.php">Menu</a></li>
             <li><a href="#">Servicios</a></li>
-            <li><a href="#">Cotizaciones</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="cotizaciones.php">Cotizaciones</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
             <li><a href="#">Nosotros</a></li>
         </ul>
       </div>
