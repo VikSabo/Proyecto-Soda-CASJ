@@ -1,0 +1,5 @@
+
+ol li {
+  list-style-type:  square;
+  list-style-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cf/Blue_check.png");
+}

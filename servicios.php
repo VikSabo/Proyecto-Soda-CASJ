@@ -9,6 +9,8 @@
   <title>M&M Soluciones</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="estilos/estilo_menu.css">
+  <link rel="stylesheet" type="text/css" href="estilos/estilo_servicios.css">
+  <script src="js/funciones.js"></script>
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 </head>
@@ -34,9 +36,22 @@
 
   <section>
     <h1 id="fuente" align="center">Servicios Complementarios</h1><br>
+    <ol>
+      <?php
+        $res = mysqli_query($connection, "SELECT * FROM servicios");
+        while($row = mysqli_fetch_array($res)){
+      ?>
+      <li><a href="#" onclick="mostrar_contenido();"><?php echo  $row['nombre_servicio'];?></a>
+      <?php 
+        }
+      ?>
+    </ol>
   </section>
 
   <aside>
+    <div id="muestra">
+      
+    </div>
   </aside>
  
 </body>
