@@ -22,7 +22,7 @@
           <ul>
             <li><a href="index.php">Home</a></li>
             <li class="current_page_item" ><a href="menu.php">Menu</a></li>
-            <li><a href="#">Servicios</a></li>
+            <li><a href="servicios.php">Servicios</a></li>
             <li><a href="cotizaciones.php">Cotizaciones</a></li>
             <li><a href="contacto.php">Contacto</a></li>
             <li><a href="#">Nosotros</a></li>
