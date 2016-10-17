@@ -1,0 +1,297 @@
+code {
+  background: #2db34a;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: center;
+}
+
+#fuente {
+  font-family: Papyrus, fantasy;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  color: #521416;
+}
+
+header{
+  width: 100%;
+}
+section,
+aside,
+footer {
+  margin: 0 1.5% 24px 1.5%;
+}
+section {
+  float: left;
+  width: 63%;
+}
+aside {
+  float: right;
+  width: 30%;
+}
+footer {
+  clear: both;
+  margin-bottom: 0;
+}
+
+/*Header*/
+#wrapper {
+  padding-bottom: 50px;
+}
+
+#header-wrapper {
+  overflow: hidden;
+  height: 120px;
+  background: #B50D0D;
+}
+
+#header {
+  overflow: hidden;
+  width: 1000px;
+  height: 120px;
+  margin: 0 auto;
+  padding: 0px 0px;
+}
+
+/*Menu*/
+#menu {
+  float: right;
+  width: 800px;
+  height: 90px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#menu ul {
+  float: right;
+  margin: 0;
+  padding: 50px 0px 0px 0px;
+  list-style: none;
+  line-height: normal;
+}
+
+#menu li {
+  float: left;
+  padding: 0px 0px 0px 0px;
+}
+
+#menu a {
+  display: block;
+  margin-right: 1px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  color: #FFFFFF;
+  border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+  background: #690606;
+  border-radius: 5px;
+}
+
+#logo {
+  float: left;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+}
+
+.container {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+#footer {
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px 0 15px 0;
+  background: #B50D0D;
+}
+
+/* footer social icons */
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left:0 !important;
+  padding: 0;
+}
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+/* Sidebar */
+
+#sidebar {
+  float: right;
+  width: 460px;
+  margin: 0px;
+  padding: 40px;
+  background: #521416;
+  border-radius: 7px;
+
+}
+
+
+/*=========================
+  Icons
+ ================= */
+
+@font-face {
+    font-family: 'si';
+    src: url('icons/socicon.eot');
+    src: url('icons/socicon.eot?#iefix') format('embedded-opentype'),
+         url('icons/socicon.woff') format('woff'),
+         url('icons/socicon.ttf') format('truetype'),
+         url('icons/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+ 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(icons/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 53px;
+    height: 53px;
+    line-height: 53px;
+    font-size: 29px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: none;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter {
+    background-color: #4da7de;
+}
+.soc-twitter:before {
+    content:'a';
+}
+.soc-facebook {
+    background-color: #3e5b98;
+}
+.soc-facebook:before {
+    content:'b';
+}
+.soc-google {
+    background-color: #d93e2d;
+}
+.soc-google:before {
+    content:'c';
+}
+
+.mySlides {
+  display:none;
+}
+
+.formulario { 
+  background:#f9f9f9; 
+  position: relative;
+  left: 30%;
+}
+
+.formulario fieldset {
+  margin: auto;
+  text-align: center;
+}
+
+.formulario fieldset input{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.formulario fieldset select{
+  text-transform: none;
+  margin: 10px;
+}
+
+.formulario fieldset textarea{
+  margin: 10px;
+}
+
+
+.direccion{
+  width: 300px;
+  border: 25px solid rgba(202, 38, 38, 0.35);
+  border-style: dotted;
+  border-width: 2px;
+  padding: 25px;
+  margin: 25px;
+  display: inline-block;    
+}
+
+.desc {
+  display: flex;
+  font-size: 12px;
+  font-style: oblique;
+}
+
+.dir {
+  display: block;
+  text-align: left;
+  position: absolute;
+  left: 10pc;
+  top: 21pc;
+}
+
+.ser {
+    font-size: 10px;    
+    margin: auto;
+    position: absolute;
+    left: 11pc;
+    bottom: 7pc;
+}

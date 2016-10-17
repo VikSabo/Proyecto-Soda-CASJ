@@ -4,7 +4,7 @@
   <title>M&M Soluciones</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
-  <link rel="stylesheet" type="text/css" href="estilos/styles_cotizaciones.css">
+  <link rel="stylesheet" type="text/css" href="estilos/estilo_cotizaciones.css">
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 </head>
@@ -36,30 +36,35 @@
         Nombre del contacto: <input type="text" name="nombre"> <br>
         Teléfono: <input type="text" name="telefono"> <br>
         Email: <input type="text" name="email"> <br>
-        Dirección:
+        <label class="dir">Dirección:</label>
         <div class="direccion">
           Provincia:
           <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
+            <option value="SanJose">San José</option>
+            <option value="Alajuela">Alajuela</option>
+            <option value="Heredia">Heredia</option>
+            <option value="Cartago">Cartago</option>
+            <option value="Puntarenas">Puntarenas</option>
+            <option value="Guanacaste">Guanacaste</option>
+            <option value="Limón">Limón</option>
           </select>
           <br>
           Cantón:
           <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
+            <option value="SanJose">San Jose</option>
+            <option value="Escazu">Escazu</option>
+            <option value="Desamparados">Desamparados</option>
+            <option value="Puriscal">Puriscal</option>
+            <option value="Tarrazu">Tarrazu</option>
+            <option value="Aserri">Aserri</option>
           </select>
           <br>
           Distrito:
           <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
+            <option value="Carmen">Carmen</option>
+            <option value="Merced">Merced</option>
+            <option value="Zapote">Zapote</option>
+            <option value="Hatillo">Hatillo</option>
           </select>
           <br>
           Descripción:
@@ -72,7 +77,7 @@
         <input type="radio" name="servicio" value="male"> Buffet
         <input type="radio" name="servicio" value="female"> Plato Servido
         <input type="radio" name="servicio" value="other"> Pasabocas<br>
-        Servicio especial o extra:
+        <label class="ser">Servicio especial o extra:</label>
         <textarea></textarea>
         <br><br>
         <input type="submit" value="Realizar Cotización">
@@ -80,22 +85,8 @@
     </form>
   </section>
 
-  <section>
-    <div class="vip">
-      Pida la tarjeta VIP de cliente frecuente y disfrute de sus beneficios.
-    </div>
-  </section>
-
-  <footer id="footer">
-    <div align="center">
-      <label>Siguenos en:</label>
-      <ul class="soc">
-        <li><a class="soc-twitter" href="#"></a></li>
-        <li><a class="soc-facebook" href="#"></a></li>
-        <li><a class="soc-google" href="#"></a></li>
-      </ul>
-       &copy; Instituto Tecnológico de Costa Rica 2016
-    </div>
+  <footer>
+    Pida la tarjeta VIP de cliente frecuente y disfrute de sus beneficios.
   </footer>
  
 </body>
