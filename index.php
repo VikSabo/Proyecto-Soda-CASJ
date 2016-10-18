@@ -20,7 +20,7 @@
             <li><a href="servicios.php">Servicios</a></li>
             <li><a href="cotizaciones.php">Cotizaciones</a></li>
             <li><a href="contacto.php">Contacto</a></li>
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="nosotros.php">Nosotros</a></li>
         </ul>
       </div>
     </div>

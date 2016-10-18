@@ -115,11 +115,11 @@ footer {
   margin: 0px auto;
 }
 
-#footer {
-  height: 100%;
-  margin: 0 auto;
-  padding: 50px 0 15px 0;
-  background: #B50D0D;
+footer {
+    clear: both;
+    margin-bottom: 0;
+    font-size: smaller;
+    text-align: right;
 }
 
 /* footer social icons */
@@ -260,15 +260,15 @@ ul.social-network li {
 }
 
 .formulario fieldset textarea{
+  text-transform: none;
   margin: 10px;
 }
 
-
 .direccion{
-  width: 300px;
-  border: 25px solid rgba(202, 38, 38, 0.35);
-  border-style: dotted;
-  border-width: 2px;
+  width: 500px;
+  border: 25px solid rgba(191, 16, 16, 0.94);
+  border-style: double;
+  border-width: 5px;
   padding: 25px;
   margin: 25px;
   display: inline-block;    
@@ -281,17 +281,22 @@ ul.social-network li {
 }
 
 .dir {
-  display: block;
-  text-align: left;
-  position: absolute;
-  left: 10pc;
-  top: 21pc;
+  position: relative;
+  bottom: 70px;
 }
 
 .ser {
-    font-size: 10px;    
     margin: auto;
-    position: absolute;
-    left: 11pc;
-    bottom: 7pc;
+    position: relative;
+    bottom: 70px;
+}
+
+textarea#styled1, textarea#styled2 {
+  width: 300px;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
