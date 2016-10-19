@@ -58,3 +58,95 @@ div.desc {
   line-height: 23.4px;
   color: #ffffff;
 }
+
+#board-top {
+width: 295px;
+height: 25px;
+background: #761D2A url('../img/board-top.gif') no-repeat 0 0;
+}
+
+#board {
+background-color: #761D2A;
+width: 295px;
+}
+
+.board-in {
+margin: 0 1.8em;
+padding: 0.7em 0;
+}
+
+#board-bottom {
+width: 295px;
+height: 21px;
+background: #761D2A url('../img/board-bottom.gif') no-repeat 0 0;
+}
+
+#board h3 {
+font-size: 1.35em;
+color: white;
+}
+
+#board dl {
+color: white;
+margin-top: 13px;
+}
+
+#board dt {
+font-size: 0.95em;
+font-weight: bold;
+margin-bottom: 2px;
+}
+
+#board dd {
+margin-bottom: 17px;
+}
+
+#board dd a, #board dd a:visited  {
+color: white;
+font-weight: normal;
+text-decoration: none;
+line-height: 1.3;
+margin-bottom: 17px;
+}
+
+#board dd a:hover {
+text-decoration: underline;
+}
+
+.divider {
+width: 295px;
+height: 13px;
+background: #761D2A url('../img/divider.gif') no-repeat 0 0;
+margin: -5px 0 16px 0;
+}
+
+.paper {
+  width: 295px;
+  height: 210px;
+  background: #8B5F26 url('../img/paper.gif') no-repeat 0 0;
+  margin-top: 4px;
+  padding-bottom: 9px;
+}
+
+.paper-in {
+  margin: 0 1.5em;
+  padding-top: 1.7em;
+}
+
+#board contacto {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  color: #761D2A;
+  line-height: 0.45;
+  background-color: #FFFFFF;
+}
+
+.h4 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  color: #761D2A;
+  line-height: 0.45;
+  background-color: #FFFFFF;
+}

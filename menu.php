@@ -50,21 +50,43 @@
   </section>
 
   <aside>
-    <div id="sidebar">
-      <h3 id="fuenteH3">
-        Nuestros precios son los siguientes: <br>
-      </h3>
-      <ol>
-        <?php
-            $res = mysqli_query($connection, "SELECT * FROM plato");
-            while($row = mysqli_fetch_array($res)){
-          ?>
-            <li id="fuentePrecios"><?php echo $row['nombre_plato'];?>: <?php echo $row['precio'];?></li>
-          <?php
-            };
-        ?>
-        </ol> 
-    </div>
+    <div id="board-top">&nbsp;</div>
+        <div id="board">
+          <div class="board-in">
+            <h3 align="center">Precios del día</h3>
+            <ol>
+              <?php
+                  $res = mysqli_query($connection, "SELECT nombre_plato,precio FROM plato");
+                  while($row = mysqli_fetch_array($res)){
+                ?>
+                  <li id="fuentePrecios"><?php echo $row['nombre_plato'];?>: <?php echo $row['precio'];?></li>
+                <?php
+                  };
+              ?>
+            </ol> 
+          </div>
+          <div class="divider">&nbsp;</div>
+          <div class="board-in">
+            <h3 align="center">Información de Contacto</h3>
+          </div>
+          <div class="paper">
+            <div class="paper-in">
+              <contacto>
+                  Soda TEC/M&M Soluciones <br />
+                  <h4 class="h4">
+                    E-mail: mymsoluciones1&#64;
+                    gmail.com<br />
+                  </h4>
+                  <h4 class="h4">
+                    Tel: 8585-0549<br />
+                  </h4>
+
+              </contacto> 
+            </div>
+          </div>
+        </div>
+        <div id="board-bottom">&nbsp;</div>
+      </div>
   </aside>
  
 </body>
