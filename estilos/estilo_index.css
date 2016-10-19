@@ -12,6 +12,10 @@ code {
   text-align: center;
 }
 
+body {
+  background-color: antiquewhite;
+}
+
 #fuente {
   font-family: Papyrus, fantasy;
   font-size: 40px;
@@ -53,7 +57,7 @@ footer {
 #header-wrapper {
   overflow: hidden;
   height: 120px;
-  background: #B50D0D;
+  background: #761D2A;
 }
 
 #header {
@@ -127,7 +131,7 @@ footer {
   height: 100%;
   margin: 0 auto;
   padding: 50px 0 15px 0;
-  background: #B50D0D;
+  background: #761D2A;
 }
 
 /*=========================

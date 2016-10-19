@@ -6,12 +6,13 @@
   <link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
   <header>
     <div id="header-wrapper">
       <div id="logo">
-        <h1><img src="logo.png" width="180" height="119"></h1>
+        <h1><img src="logo.png" width="320" height="120"></h1>
       </div>
       <div id="menu">
           <ul>
@@ -66,6 +67,7 @@
         <li><a class="soc-twitter" href="#"></a></li>
         <li><a class="soc-facebook" href="#"></a></li>
         <li><a class="soc-google" href="#"></a></li>
+        <li><i class="fa fa-cc-mastercard" aria-hidden="true" style="font-size:48px;color:black"></i></li>
       </ul>
        &copy; Instituto Tecnológico de Costa Rica 2016
     </div>

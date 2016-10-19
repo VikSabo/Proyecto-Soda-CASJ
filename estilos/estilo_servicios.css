@@ -24,23 +24,6 @@ ol li {
 header{
   width: 100%;
 }
-section,
-aside,
-footer {
-  margin: 0 1.5% 24px 1.5%;
-}
-section {
-  float: left;
-  width: 63%;
-}
-aside {
-  float: right;
-  width: 30%;
-}
-footer {
-  clear: both;
-  margin-bottom: 0;
-}
 
 /*=========================
   Header
@@ -129,22 +112,6 @@ footer {
   margin: 0px auto;
 }
 
-
-/*=========================
-  Sidebar
- ================= */
-
-#sidebar {
-  float: right;
-  width: 460px;
-  margin: 0px;
-  padding: 40px;
-  background: #521416;
-  border-radius: 7px;
-
-}
-
-
 /*=========================
   Image Gallery
  ================= */
@@ -183,26 +150,4 @@ div.desc {
   line-height: 26.4px;
   color: #521416;
 }
-
-#fuenteH3 {
-  font-family: Papyrus, fantasy;
-  font-size: 40px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 26.4px;
-  padding: 4px;
-  color: #ffffff;
-}
-
-#fuentePrecios {
-  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-  font-size: 20px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 23.4px;
-  color: #ffffff;
-}
-
 
