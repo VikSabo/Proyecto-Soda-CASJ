@@ -29,7 +29,13 @@
   <br><br>
 
   <section>
-   
+    <div class="image">
+        <img src="fondo.png" border="0" width="500" height="564" />
+        <p> Gracias por visitar nuestro sitio oficial. Nuestros objetivos son tener a nuestro clientes contentos y satisfechos y sobre todo queremos que se lleven un buen recuerdo de nosotros.
+
+        Podrás encontrar todo lo que necesita conocer y saber sobre nuestro negocio.  M&M Soluciones ubicado actualmente en el Barrio Amón, dentro del Centro Académico de el Tecnológico de Costa Rica en San José. Está abierto durante todo el día, por desayuno, almuerzo y cena, bebidas, respostería, entre otra variedad de productos que les podemos ofrecer. 
+        </p>
+    </div>
   </section>
  
 </body>

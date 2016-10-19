@@ -1,0 +1,15 @@
+.image img{ 
+  position: relative; 
+  margin: auto;
+  left: 45%; 
+}
+
+.image p {
+  position: absolute;
+  top: 50%;
+  margin: auto;
+  left: 25%;
+  width: 50%;
+  text-align: center;
+  color: deeppink;
+}
