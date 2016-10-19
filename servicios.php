@@ -8,7 +8,7 @@
 <head>
   <title>M&M Soluciones</title>
   <meta charset="utf-8">
-  <!--<link rel="stylesheet" type="text/css" href="estilos/estilo_menu.css">-->
+  <link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
   <link rel="stylesheet" type="text/css" href="estilos/estilo_servicios.css">
   <script src="js/funciones.js"></script>
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">

@@ -8,6 +8,7 @@
 <head>
   <title>M&M Soluciones</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
   <link rel="stylesheet" type="text/css" href="estilos/estilo_menu.css">
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
