@@ -17,26 +17,13 @@ ol li {
   color: #521416;
 }
 
-div.img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 380px;
+.floating-box {
+  position: relative;
+  float: left;
+  width: 150px;
+  margin: 100px;
 }
 
-div.img:hover {
-    border: 2px solid #777;
-}
-
-div.img img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 19px;
-    text-align: center;
-}
 
 /*=========================
   Font

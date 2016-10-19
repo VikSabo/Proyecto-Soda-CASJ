@@ -67,7 +67,7 @@
         <li><a class="soc-twitter" href="#"></a></li>
         <li><a class="soc-facebook" href="#"></a></li>
         <li><a class="soc-google" href="#"></a></li>
-        <li><i class="fa fa-cc-mastercard" aria-hidden="true" style="font-size:48px;color:black"></i></li>
+        <!--<li><i class="fa fa-cc-mastercard" aria-hidden="true" style="font-size:48px;color:black"></i></li>-->
       </ul>
        &copy; Instituto Tecnológico de Costa Rica 2016
     </div>
