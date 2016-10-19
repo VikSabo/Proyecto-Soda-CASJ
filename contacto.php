@@ -2,6 +2,7 @@
   include 'connection_db.php';
   // Connect to the database
   $connection = db_connect();
+  
 
 ?>
 
@@ -10,7 +11,7 @@
 <head>
   <title>M&M Soluciones</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="estilos/estilo_menu.css">
+  <link rel="stylesheet" type="text/css" href="estilos/estilo_contacto.css">
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 </head>
@@ -23,10 +24,10 @@
       <div id="menu">
           <ul>
             <li><a href="index.php">Home</a></li>
-            <li class="current_page_item" ><a href="menu.php">Menu</a></li>
+            <li><a href="menu.php">Menu</a></li>
             <li><a href="#">Servicios</a></li>
-            <li><a href="#">Cotizaciones</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="cotizaciones.php">Cotizaciones</a></li>
+            <li class="current_page_item" ><a href="contacto.php">Contacto</a></li>
             <li><a href="#">Nosotros</a></li>
         </ul>
       </div>
@@ -35,36 +36,62 @@
   <br><br>
 
   <section>
-    <h1 id="fuente" align="center">Nuestros platillos del día</h1><br>
-    <?php
+    <!-- meter lo del form -->
+	<form action="" method="post">
+	Name: <input type="text" name="name" id="nombre"><br>
+	<br>
+	<!--E-mail: <input type="text" name="email" id="correo"><br>
+	<br> -->
+	Asunto: <input type="text" name="subject" id="asunto"><br>
+	<br>
+	Texto: <input type="text" name="texto" id="cuerpo"><br>
+	<br>
+<input name="Submit" type="submit" value="Submit" />
+</form> 
 
-      $res = mysqli_query($connection, "SELECT * FROM plato");
-      while($row = mysqli_fetch_array($res)){
-    ?>
-      <div class="img">
-        <img src="<?php echo $row['imagen']; ?>" width="600" height="400">
-        <div class="desc"><?php echo $row['descripcion'];?></div>
-      </div> 
-      <?php
-        }
-    ?>
+<!-- código php para mandar el correo -->
+
+<?php
+require("PHPMailer_5.2.4/class.phpmailer.php");
+
+
+
+//$mail->setFrom('vsaborio4@gmail.com', 'Mailer');
+
+
+
+if (isset($_POST['submit'])) {
+$mail = new PHPMailer;
+
+//$mail->SMTPDebug = 2;                               // Enable verbose debug output
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'itcrprueba001@gmail.com';                 // SMTP username
+$mail->Password = 'holamundo';                           // SMTP password
+$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587;                                    // TCP port to connect to
+
+	$mail->addAddress('itcrprueba001@gmail.com');               // Name is optional
+    $mail->Subject = $_POST['subject'];
+	$mail->Body    = 'Hola, mi nombre es:'.$_POST['name'].'  '.$_POST['texto'];
+
+	if(!$mail->send()) {
+		echo 'Message could not be sent.';
+		echo 'Mailer Error: ' . $mail->ErrorInfo;
+	} else {
+		echo 'Message has been sent';
+	}
+}
+
+
+?>
+
   </section>
 
   <aside>
     <div id="sidebar">
-      <h3 id="fuenteH3">
-        Nuestros precios son los siguientes: <br>
-      </h3>
-      <ol>
-        <?php
-            $res = mysqli_query($connection, "SELECT * FROM plato");
-            while($row = mysqli_fetch_array($res)){
-          ?>
-            <li id="fuentePrecios"><?php echo $row['nombre_plato'];?>: <?php echo $row['precio'];?></li>
-          <?php
-            };
-        ?>
-        </ol> 
+      
     </div>
   </aside>
  
