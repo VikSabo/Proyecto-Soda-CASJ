@@ -2,6 +2,8 @@
   include 'connection_db.php';
   // Connect to the database
   $connection = db_connect();
+  date_default_timezone_set('America/Costa_Rica');
+  $date = date("Y-m-d");
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,8 +38,9 @@
   <section>
     <h1 id="fuente" align="center">Nuestros platillos del día</h1><br>
     <?php
+      $query = "SELECT p.imagen,p.descripcion FROM menu m INNER JOIN plato p ON m.id_plato=p.id_plato WHERE m.date='$date'";
+      $res = mysqli_query($connection, $query);
 
-      $res = mysqli_query($connection, "SELECT * FROM plato");
       while($row = mysqli_fetch_array($res)){
     ?>
       <div class="img">
@@ -56,8 +59,9 @@
             <h3 align="center">Precios del día</h3>
             <ol>
               <?php
-                  $res = mysqli_query($connection, "SELECT nombre_plato,precio FROM plato");
-                  while($row = mysqli_fetch_array($res)){
+                $query = "SELECT p.nombre_plato,p.precio FROM menu m INNER JOIN plato p ON m.id_plato=p.id_plato WHERE m.date='$date'";
+                $res = mysqli_query($connection, $query);
+                while($row = mysqli_fetch_array($res)){
                 ?>
                   <li id="fuentePrecios"><?php echo $row['nombre_plato'];?>: <?php echo $row['precio'];?></li>
                 <?php
