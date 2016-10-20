@@ -52,13 +52,35 @@
         x[myIndex-1].style.display = "block";
         setTimeout(carousel, 2000); // Change image every 2 seconds
     }
-    </script>
+  </script>
 
-  <aside>
-    <div id="sidebar">
-      <img src="sabiasque.jpeg" width="390" height="360">      
+  <section>
+    <div class="lista">
+      <h3>Ofrecemos</h3>
+      <ul>
+        <li>Bocadillos</li>
+        <li>Desayuno</li>
+        <li>Almuerzos</li>
+        <li>Cenas</li>
+      </ul>
+      
+      <h3>Lo llevamos donde usted lo necesite</h3>
+      <ul>
+        <li>Calidad</li>
+        <li>Excelente precio</li>
+        <li>Profesionalismo</li>
+      </ul>
+
+      <h3>Plato del día, 3 guarniciones a escoger:</h3>
+      <ul>
+        <li>Carne a elegir </li>
+        <li>Ensalada</li>
+        <li>Refresco</li>
+      </ul>
+  
+      <img src="img/carnes.jpg">
     </div>
-  </aside>
+  </section>
 
   <footer id="footer">
     <div align="center">

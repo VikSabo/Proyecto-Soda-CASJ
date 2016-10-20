@@ -18,12 +18,12 @@ body {
 
 #fuente {
   font-family: Papyrus, fantasy;
-  font-size: 40px;
-  font-style: normal;
+  font-size: 45px;
   font-variant: normal;
   font-weight: 500;
   line-height: 26.4px;
-  color: #521416;
+  color: #761D2A;
+  font-weight: bold;
 }
 
 header{
@@ -249,6 +249,34 @@ ul.social-network li {
 }
 
 .mySlides {
-  display:none;
+  margin: auto;
+  position: relative;
+  left: 50%;
+  padding-bottom: 0px;
+  padding-top: 25px;
 }
 
+h4 {
+    font-size: 20px;
+    position: relative;
+    margin: auto;
+    left: 50%;
+}
+
+.lista {
+  padding-left: 20px;
+  margin-left: 2%;
+  width: 150%;
+  border-style: double;
+  border-width: thick;
+  border-color: firebrick;
+  background-color: bisque;
+}
+
+.lista img {
+  position: absolute;
+  display: inline-block;
+  float: left;
+  top: 106%;
+  right: 25%;
+}
