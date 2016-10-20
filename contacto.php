@@ -37,30 +37,24 @@
 
   <section>
     <!-- meter lo del form -->
-	<form action="" method="post">
-	Name: <input type="text" name="name" id="nombre"><br>
-	<br>
-	<!--E-mail: <input type="text" name="email" id="correo"><br>
-	<br> -->
-	Asunto: <input type="text" name="subject" id="asunto"><br>
-	<br>
-	Texto: <input type="text" name="texto" id="cuerpo"><br>
-	<br>
-<input name="Submit" type="submit" value="Submit" />
-</form> 
+	<form  method="post">
+  	<label>Name</label><input type="text" name="name" id="nombre"><br>
+  	<br>
+  	<!--E-mail: <input type="text" name="email" id="correo"><br>
+  	<br> -->
+  	<label>Asunto:</label><input type="text" name="subject" id="asunto"><br>
+  	<br>
+  	<label>Texto:</label>
+    <input type="text" name="texto" id="cuerpo"><br>
+  	<br>
+    <input name="Submit" type="submit" value="Submit" />
+  </form> 
 
 <!-- código php para mandar el correo -->
 
 <?php
 require("PHPMailer_5.2.4/class.phpmailer.php");
 
-
-
-//$mail->setFrom('vsaborio4@gmail.com', 'Mailer');
-
-
-
-if (isset($_POST['submit'])) {
 $mail = new PHPMailer;
 
 //$mail->SMTPDebug = 2;                               // Enable verbose debug output
@@ -72,17 +66,26 @@ $mail->Password = 'holamundo';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
-	$mail->addAddress('itcrprueba001@gmail.com');               // Name is optional
-    $mail->Subject = $_POST['subject'];
-	$mail->Body    = 'Hola, mi nombre es:'.$_POST['name'].'  '.$_POST['texto'];
+$mail->addAddress('itcrprueba001@gmail.com');               // Name is optional
+//$mail->setFrom('vsaborio4@gmail.com', 'Mailer');
 
-	if(!$mail->send()) {
-		echo 'Message could not be sent.';
-		echo 'Mailer Error: ' . $mail->ErrorInfo;
-	} else {
-		echo 'Message has been sent';
-	}
+
+if (isset($_POST['texto'])) {
+  $name = $_POST['name']; // required
+  $subject = $_POST['subject']; // required
+  $texto = $_POST['texto']; // required
+
+  $mail->Subject = $name;
+  $mail->Body    = 'Hola, mi nombre es:'.$name.'  '.$texto;
+
+  if(!$mail->send()) {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+  } else {
+    echo 'Message has been sent';
+  }
 }
+
 
 
 ?>
