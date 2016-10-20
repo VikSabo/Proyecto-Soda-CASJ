@@ -77,14 +77,9 @@
             <div class="paper-in">
               <contacto>
                   Soda TEC/M&M Soluciones <br />
-                  <h4 class="h4">
-                    E-mail: mymsoluciones1&#64;
-                    gmail.com<br />
-                  </h4>
-                  <h4 class="h4">
-                    Tel: 8585-0549<br />
-                  </h4>
-
+                  <small style="font-size: 12px;">E-mail: mymsoluciones1&#64;</small>
+                  <small style="font-size: 12px;">gmail.com</small><br />
+                  <small>Tel: 8585-0549</small><br />
               </contacto> 
             </div>
           </div>
