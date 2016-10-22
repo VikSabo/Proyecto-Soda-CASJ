@@ -8,6 +8,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>M&M Soluciones</title>
   <meta charset="utf-8">
@@ -15,6 +16,41 @@
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 </head>
+
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+
+
 <body>
   <header>
     <div id="header-wrapper">
@@ -37,18 +73,23 @@
 
   <section>
     <!-- meter lo del form -->
-	<form  method="post">
-  	<label>Name</label><input type="text" name="name" id="nombre"><br>
-  	<br>
-  	<!--E-mail: <input type="text" name="email" id="correo"><br>
-  	<br> -->
-  	<label>Asunto:</label><input type="text" name="subject" id="asunto"><br>
-  	<br>
-  	<label>Texto:</label>
-    <input type="text" name="texto" id="cuerpo"><br>
-  	<br>
-    <input name="Submit" type="submit" value="Submit" />
-  </form> 
+ <div1>
+  <form  method="post">
+    <label for="lname">Nombre:</label>
+    <input type="text" id="nombre" name="name">
+<br>
+<br>
+    <label for="lname">Asunto:</label>
+    <input type="text" id="asunto" name="subject">
+<br>
+<br>
+    <label for="lname">Texto:</label>
+    <input type="text" id="cuerpo" name="texto">
+ <br>
+ <br>
+    <input type="submit" value="Enviar Correo">
+  </form>
+</div1>
 
 <!-- código php para mandar el correo -->
 
@@ -90,13 +131,6 @@ if (isset($_POST['texto'])) {
 
 ?>
 
-  </section>
 
-  <aside>
-    <div id="sidebar">
-      
-    </div>
-  </aside>
- 
 </body>
 </html>
