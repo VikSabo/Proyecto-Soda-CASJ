@@ -9,7 +9,7 @@
 <html>
 <head>
   <title>M&M Soluciones</title>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
   <link rel="stylesheet" type="text/css" href="estilos/estilo_menu.css">
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
@@ -17,10 +17,10 @@
 </head>
 <body>
   <header>
+    <div id="logo">
+      <h1><img src="logo.png"></h1>
+    </div>
     <div id="header-wrapper">
-      <div id="logo">
-        <h1><img src="logo.png" width="180" height="119"></h1>
-      </div>
       <div id="menu">
           <ul>
             <li><a href="index.php">Home</a></li>
@@ -41,12 +41,33 @@
       $query = "SELECT p.imagen,p.descripcion FROM menu m INNER JOIN plato p ON m.id_plato=p.id_plato WHERE m.date='$date'";
       $res = mysqli_query($connection, $query);
 
+      if (mysqli_num_rows($res)==0) {
+        echo "<div class='info'> No hay platillos para el día de hoy</div>";
+      }
+
       while($row = mysqli_fetch_array($res)){
     ?>
       <div class="img">
         <img src="<?php echo $row['imagen']; ?>" width="600" height="400">
         <div class="desc"><?php echo $row['descripcion'];?></div>
-      </div> 
+      </div>
+      <?php
+        }
+    ?>
+    <?php
+      $query = "SELECT b.imagen,b.descripcion FROM menu m INNER JOIN bebida b ON m.id_bebida=b.id_bebida WHERE m.date='$date'";
+      $res = mysqli_query($connection, $query);
+
+      if (mysqli_num_rows($res)==0) {
+        echo "<div class='info'> No hay platillos para el día de hoy</div>";
+      }
+
+      while($row = mysqli_fetch_array($res)){
+    ?>
+      <div class="img">
+        <img src="<?php echo $row['imagen']; ?>" width="600" height="400">
+        <div class="desc"><?php echo $row['descripcion'];?></div>
+      </div>
       <?php
         }
     ?>

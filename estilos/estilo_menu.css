@@ -4,19 +4,19 @@
  ================= */
 
 div.img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 380px;
+  margin: 15px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 380px;
 }
 
 div.img:hover {
-    border: 2px solid #777;
+  border: 2px solid #777;
 }
 
 div.img img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 div.desc {
@@ -142,3 +142,18 @@ margin: -5px 0 16px 0;
   background-color: #FFFFFF;
 }
 
+
+.info {
+  border: 1px solid;
+  margin: 10px 0px;
+  padding:15px 10px 15px 60px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.info {
+  color: #00529B;
+  background-color: #BDE5F8;
+  background-image: url('../img/info.png');
+  background-size: 35px;
+}
