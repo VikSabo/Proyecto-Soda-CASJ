@@ -28,6 +28,7 @@ body {
 
 header{
   width: 100%;
+  margin-bottom: 4%;
 }
 section,
 aside,
@@ -116,10 +117,14 @@ footer {
 
 #logo {
   float: left;
-  width: 300px;
-  margin: 0;
-  padding: 0;
-  color: #FFFFFF;
+  position: absolute;
+}
+
+#logo img{
+  width: 77%;
+  position: relative;
+  right: 25px;
+  margin-top: 15px;
 }
 
 .container {
@@ -263,18 +268,6 @@ h4 {
     left: 50%;
 }
 
-.lista {
-  padding-left: 20px;
-  margin-left: 2%;
-  width: 150%;
-  border-style: double;
-  border-width: thick;
-  border-color: firebrick;
-  background-color: bisque;
-}
-
-
-
 #parent {
   width: 150%;
   border-style: double;
@@ -286,10 +279,26 @@ h4 {
 #narrow {
   margin-top: 30px;
   width: 660px;
+  padding-left: 4%;
   /* Just so it's visible */
+}
+
+#narrow img{
+  margin-bottom: -5px;
+  margin-left: 15%;
 }
 #wide {
   flex: 1;
+  margin-left: 5%;
   /* Grow to rest of container */
   /* Just so it's visible */
+}
+
+#wide h3{
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+  font-style: oblique;
+}
+#wide li{
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 15px;
 }

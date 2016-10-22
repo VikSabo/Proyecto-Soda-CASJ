@@ -10,10 +10,10 @@
 </head>
 <body>
   <header>
+    <div id="logo">
+      <h1><img src="logo.png"></h1>
+    </div>
     <div id="header-wrapper">
-      <div id="logo">
-        <h1><img src="logo.png" width="180" height="120"></h1>
-      </div>
       <div id="menu">
           <ul>
             <li class="current_page_item"><a href="#">Home</a></li>
@@ -29,7 +29,7 @@
   <br><br>
 
   <section>
-    <h1 id="fuente">M&M Soluciones</h1>
+    <!--<h1 id="fuente">M&M Soluciones</h1>-->
     <div class="w3-content" style="max-width:400px">
       <img class="mySlides" src="http://i67.tinypic.com/s25quc.jpg" style="width:100%">
       <img class="mySlides" src="http://www.vero4travel.es/wp-content/uploads/2015/11/casado1-e1446457683842.jpg" style="width:100%">
@@ -79,7 +79,7 @@
           <li>Refresco</li>
         </ul>
       </div>
-      <div id="narrow"><img src="img/carnes.jpg"></div>
+      <div id="narrow"><img src="img/carnes.png"></div>
     </div>
   </section>
 
