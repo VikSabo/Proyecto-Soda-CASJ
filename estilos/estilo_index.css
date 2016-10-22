@@ -273,10 +273,23 @@ h4 {
   background-color: bisque;
 }
 
-.lista img {
-  position: absolute;
-  display: inline-block;
-  float: left;
-  top: 106%;
-  right: 25%;
+
+
+#parent {
+  width: 150%;
+  border-style: double;
+  border-width: thick;
+  border-color: firebrick;
+  background-color: bisque;
+  display: flex;
+}
+#narrow {
+  margin-top: 30px;
+  width: 660px;
+  /* Just so it's visible */
+}
+#wide {
+  flex: 1;
+  /* Grow to rest of container */
+  /* Just so it's visible */
 }

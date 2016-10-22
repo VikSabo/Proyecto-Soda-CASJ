@@ -8,6 +8,7 @@ function db_connect(){
     if(!isset($connection)) {
          // Load configuration as an array. Use the actual location of your configuration file
         $connection = mysqli_connect('127.0.0.1','root','','soda_db');
+        $connection->set_charset("utf8");
     }
 
     // If connection was not successful, handle the error

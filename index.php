@@ -55,30 +55,31 @@
   </script>
 
   <section>
-    <div class="lista">
-      <h3>Ofrecemos</h3>
-      <ul>
-        <li>Bocadillos</li>
-        <li>Desayuno</li>
-        <li>Almuerzos</li>
-        <li>Cenas</li>
-      </ul>
-      
-      <h3>Lo llevamos donde usted lo necesite</h3>
-      <ul>
-        <li>Calidad</li>
-        <li>Excelente precio</li>
-        <li>Profesionalismo</li>
-      </ul>
+    <div id="parent">
+      <div id="wide">
+        <h3>Ofrecemos</h3>
+        <ul>
+          <li>Bocadillos</li>
+          <li>Desayuno</li>
+          <li>Almuerzos</li>
+          <li>Cenas</li>
+        </ul>
+        
+        <h3>Lo llevamos donde usted lo necesite</h3>
+        <ul>
+          <li>Calidad</li>
+          <li>Excelente precio</li>
+          <li>Profesionalismo</li>
+        </ul>
 
-      <h3>Plato del día, 3 guarniciones a escoger:</h3>
-      <ul>
-        <li>Carne a elegir </li>
-        <li>Ensalada</li>
-        <li>Refresco</li>
-      </ul>
-  
-      <img src="img/carnes.jpg">
+        <h3>Plato del día, 3 guarniciones a escoger:</h3>
+        <ul>
+          <li>Carne a elegir </li>
+          <li>Ensalada</li>
+          <li>Refresco</li>
+        </ul>
+      </div>
+      <div id="narrow"><img src="img/carnes.jpg"></div>
     </div>
   </section>
 
