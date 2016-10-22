@@ -57,29 +57,35 @@
       <label for="lname">Asunto:</label>
       <input type="text" id="asunto" name="subject">
       <br>
-      <label for="lname">Texto:</label>
-      <input type="text" id="cuerpo" name="texto">
-       <br>
+	  <textarea type="textarea"rows="4" cols="40" id="msj" name="mensaje">
+	  </textarea>
+	  <br>
       <input type="submit" value="Enviar Correo">
     </form>
   </div>
  </section>
+ 
 
 <!-- código php para mandar el correo -->
   <?php
-  if (isset($_POST['texto'])) {
+  if (isset($_POST['mensaje'])) {
     $name = $_POST['name']; // required
     $subject = $_POST['subject']; // required
-    $texto = $_POST['texto']; // required
+    $mensaje = $_POST['mensaje']; // required
 
     $mail->Subject = $name;
-    $mail->Body    = 'Hola, mi nombre es:'.$name.'  '.$texto;
+    $mail->Body    = 'Mi nombre es:'.$name.'  '.$mensaje;
 
+	/*if($name or $mensaje or $subject ==	"")
+	{
+	echo 'Algún campo está vacío';
+	break;
+	}*/
     if(!$mail->send()) {
-      echo 'Message could not be sent.';
+      echo '<div class="warning">Error al enviar el mensaje</div>';
       echo 'Mailer Error: ' . $mail->ErrorInfo;
     } else {
-      echo 'Message has been sent';
+      echo '<div class="success">Mensaje enviado correctamente</div>';
     }
   }
   ?>
