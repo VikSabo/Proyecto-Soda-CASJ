@@ -1,22 +1,48 @@
+.fieldset {
+  border: 1px solid #c30e0e;    
+  padding: .35em .625em .75em;
+}
+
 .formulario { 
   background:#f9f9f9; 
   position: relative;
   left: 30%;
 }
 
+.formulario legend{ 
+  font-family: Papyrus, fantasy;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  color: #521416;
+}
+
 .formulario fieldset {
   margin: auto;
   text-align: center;
+  background-color: cornsilk;
 }
 
-.formulario fieldset input{
-  margin-left: 20px;
-  margin-top: 20px;
+.formulario fieldset input[type=text], fieldset input[type=number], select{
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.formulario fieldset select{
-  text-transform: none;
-  margin: 10px;
+.formulario fieldset input[type=date]{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .formulario fieldset textarea{
@@ -38,6 +64,7 @@
   display: flex;
   font-size: 12px;
   font-style: oblique;
+  margin-top: 10px;
 }
 
 .dir {
@@ -52,11 +79,41 @@
 }
 
 textarea#styled1, textarea#styled2 {
-  width: 300px;
+  width: 400px;
   height: 120px;
   border: 3px solid #cccccc;
   padding: 5px;
   font-family: Tahoma, sans-serif;
   background-position: bottom right;
   background-repeat: no-repeat;
+}
+
+footer {
+  clear: both;
+  margin-bottom: 0;
+  font-size: smaller;
+  text-align: right;
+}
+
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 2px 3px #000000;
+  -webkit-box-shadow: 0px 1px 2px #666666;
+  -moz-box-shadow: 0px 1px 2px #666666;
+  box-shadow: 0px 1px 2px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  background: #b06f6f;
+  padding: 10px 20px 10px 20px;
+  border: solid #b38686 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #bf3b3b;
+  text-decoration: none;
 }

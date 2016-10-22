@@ -1,15 +1,108 @@
 .image img{ 
   position: relative; 
-  margin: auto;
+  margin-top: -10%;
   left: 45%; 
+  opacity: 0.2;
+  filter: alpha(opacity=20);
 }
 
 .image p {
   position: absolute;
-  top: 50%;
+  top: 35%;
   margin: auto;
   left: 25%;
   width: 50%;
   text-align: center;
-  color: deeppink;
+  color: purple;
+  font-size: x-large;
+}
+
+.separator h1 {
+  text-align: center;
+}
+
+.separator hr.style { 
+  height: 30px; 
+  position: relative;
+  left: 25%;
+  border-style: solid; 
+  border-color: #790000; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+.separator hr.style:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #790000; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+p {
+  /*so things don't run into each other*/
+  margin-bottom:1em;
+}
+
+#mainwrapper {
+  font: 10pt normal Arial, sans-serif;
+  height: auto;
+  margin: 80px auto 0 50%;
+  text-align: center;
+  width: 660px;
+}
+
+/* Image Box Style */
+#mainwrapper .box {
+  border: 5px solid #fff;
+  cursor: pointer;
+  height: 360px;
+  float: left;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  width: 480px;
+    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+#mainwrapper .box img {
+  position: absolute;
+  left: 0;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out; 
+  transition: all 300ms ease-out;
+}
+
+/* Caption Common Style */
+#mainwrapper .box .caption {
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  color: #fff;
+  z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out; 
+    transition: all 300ms ease-out;
+  left: 0;
+}
+
+
+/** Caption 3: Fade **/
+#mainwrapper .box .fade-caption, #mainwrapper .box .scale-caption  {
+  opacity: 0;
+  width: 470px;
+  height: 590px;
+  text-align: center;
+  padding: 15px;
+}
+
+/** Fade Caption :hover Behaviour **/
+#mainwrapper .box:hover .fade-caption, #mainwrapper .box:hover .scale-caption  {
+  opacity: 1;
 }

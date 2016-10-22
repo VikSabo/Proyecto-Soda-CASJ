@@ -33,9 +33,9 @@
       <fieldset>
         <legend>Cotizaciones</legend>
         <label class="desc">*Las cotizaciones sólo se realizan para grupos superiores a 20 personas.<br><br></label>
-        Nombre del contacto: <input type="text" name="nombre"> <br>
-        Teléfono: <input type="text" name="telefono"> <br>
-        Email: <input type="text" name="email"> <br>
+        Nombre del contacto: <br><input type="text" name="nombre" required> <br>
+        Teléfono: <br><input type="number" name="telefono" required> <br>
+        Email: <br><input type="text" name="email"> <br>
         <label class="dir">Dirección:</label>
         <div class="direccion">
           Provincia:
@@ -50,19 +50,19 @@
           </select>
           <br>
           <br>
-          <textarea name="styled-textarea" id="styled1" placeholder="Ingrese la dirección del lugar..."></textarea>
+          <textarea name="styled-textarea" id="styled1" placeholder="Ingrese la dirección del lugar..." required></textarea>
         </div>
         <br>
-        Fecha del evento: <input type="date" name="fecha"> <br><br>
+        Fecha del evento: <input type="date" name="fecha" required> <br><br>
         Número de personas que asistirá al evento: <input type="number" name="personas"> <br><br>
         Tipo de servicio: 
-        <input type="radio" name="servicio" value="male"> Buffet
-        <input type="radio" name="servicio" value="female"> Plato Servido
-        <input type="radio" name="servicio" value="other"> Pasabocas<br><br><br>
+        <input type="radio" name="servicio" value="buffet" checked> Buffet
+        <input type="radio" name="servicio" value="plato"> Plato Servido
+        <input type="radio" name="servicio" value="pasabocas"> Pasabocas<br><br><br>
         <label class="ser">Servicio especial o extra:</label>
         <textarea name="styled-textarea" id="styled2"></textarea>
         <br><br>
-        <input type="submit" value="Realizar Cotización">
+        <input class="btn" type="submit" value="Realizar Cotización">
       </fieldset>
     </form>
   </section>
