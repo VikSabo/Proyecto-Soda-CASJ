@@ -131,7 +131,11 @@ footer {
   width: 1000px;
   margin: 0px auto;
 }
-
+.success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+  background-image:url('http://anticadimoradivalregina.com/images/icons/icon-success.png');
+}
 #footer {
   height: 100%;
   margin: 0 auto;

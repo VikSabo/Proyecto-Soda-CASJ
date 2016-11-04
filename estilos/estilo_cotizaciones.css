@@ -17,6 +17,7 @@
   font-weight: 500;
   line-height: 26.4px;
   color: #521416;
+  margin-bottom: 40px;
 }
 
 .formulario fieldset {
@@ -60,13 +61,6 @@
   display: inline-block;    
 }
 
-.desc {
-  display: flex;
-  font-size: 12px;
-  font-style: oblique;
-  margin-top: 10px;
-}
-
 .dir {
   position: relative;
   bottom: 70px;
@@ -93,6 +87,7 @@ footer {
   margin-bottom: 0;
   font-size: smaller;
   text-align: right;
+  font-weight: bolder;
 }
 
 
