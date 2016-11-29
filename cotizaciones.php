@@ -33,7 +33,7 @@
 
     // Query to insert data
     $sql = "INSERT INTO `cotizar`(`nombre_contacto`, `apellido_contacto`, `telefono_contacto`, `email_contacto`, `id_provincia`, `lugar_contacto`, 
-    `fecha_contacto`, `personas_contacto`, `servicio_contacto`, `extra_contacto`,`estado_cotizar) VALUES ('$nombreContacto','$apellidoContacto',
+    `fecha_contacto`, `personas_contacto`, `servicio_contacto`, `extra_contacto`,`estado_cotizar`) VALUES ('$nombreContacto','$apellidoContacto',
     '$telefonoContacto','$emailContacto','$provinciaContacto','$lugarContacto','$fechaContacto','$personasContacto','$servicioContacto',
     '$extraContacto','activo')";
 
@@ -91,8 +91,8 @@
         <legend>Cotizaciones</legend>
         Nombre del contacto: <br><input type="text" name="nombre" required> <br>
         Apellido del contacto: <br><input type="text" name="apellido" required> <br>
-        Teléfono: <br><input type="number" name="telefono" required> <br>
-        Email: <br><input type="text" name="email"> <br>
+        Teléfono: <br><input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="telefono"  maxlength="8" required></input> <br>
+        Email: <br><input type="email" name="email"> <br>
         <label class="dir">Dirección:</label>
         <div class="direccion">
           Provincia:
@@ -111,7 +111,7 @@
         </div>
         <br>
         Fecha del evento: <input type="date" name="fecha" required> <br><br>
-        Número de personas que asistirá al evento: <input type="number" name="personas"> <br><br>
+        Número de personas que asistirá al evento: <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="personas"> <br><br>
         Tipo de servicio: 
         <input type="radio" name="servicio" value="Buffet" checked> Buffet
         <input type="radio" name="servicio" value="Plato Servido"> Plato Servido
