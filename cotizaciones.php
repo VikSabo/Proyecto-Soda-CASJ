@@ -33,9 +33,9 @@
 
     // Query to insert data
     $sql = "INSERT INTO `cotizar`(`nombre_contacto`, `apellido_contacto`, `telefono_contacto`, `email_contacto`, `id_provincia`, `lugar_contacto`, 
-    `fecha_contacto`, `personas_contacto`, `servicio_contacto`, `extra_contacto`) VALUES ('$nombreContacto','$apellidoContacto',
+    `fecha_contacto`, `personas_contacto`, `servicio_contacto`, `extra_contacto`,`estado_cotizar) VALUES ('$nombreContacto','$apellidoContacto',
     '$telefonoContacto','$emailContacto','$provinciaContacto','$lugarContacto','$fechaContacto','$personasContacto','$servicioContacto',
-    '$extraContacto')";
+    '$extraContacto','activo')";
 
     // Insert the data if the query its ok
     if ($connection->query($sql) === TRUE) {
@@ -113,10 +113,10 @@
         Fecha del evento: <input type="date" name="fecha" required> <br><br>
         Número de personas que asistirá al evento: <input type="number" name="personas"> <br><br>
         Tipo de servicio: 
-        <input type="radio" name="servicio" value="buffet" checked> Buffet
-        <input type="radio" name="servicio" value="plato"> Plato Servido
-        <input type="radio" name="servicio" value="pasabocas"> Pasabocas
-        <input type="radio" name="servicio" value="parallevar"> Para llevar<br><br><br>
+        <input type="radio" name="servicio" value="Buffet" checked> Buffet
+        <input type="radio" name="servicio" value="Plato Servido"> Plato Servido
+        <input type="radio" name="servicio" value="Pasabocas"> Pasabocas
+        <input type="radio" name="servicio" value="Para llevar"> Para llevar<br><br><br>
         <label class="ser">Servicio especial o extra:</label>
         <textarea name="extra" id="styled2"></textarea>
         <br><br>
